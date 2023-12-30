@@ -1,0 +1,97 @@
+---
+import htmlIcon from "../components/icons/Html 5.svg";
+import cssIcon from "../components/icons/CSS3.svg";
+import JavaScriptIcon from "../components/icons/JavaScript.svg";
+import ReactIcon from "../components/icons/React Native.svg";
+import TailwindIcon from "../components/icons/Tailwind CSS.svg";
+import BootstrapIcon from "../components/icons/Bootstrap.svg";
+import FigmaIcon from "../components/icons/Figma.svg";
+import IllustratorIcon from "../components/icons/Adobe Illustrator.svg";
+import AngularIcon from "../components/icons/AngularJS.svg";
+import Rocket from "./icons/Rocket.astro";
+---
+
+<section class={Astro.props.class}>
+  <section>
+    <h1 class="flex flex-row gap-2 mb-6 text-4xl items-start">
+      <Rocket />
+       Skills
+    </h1>
+    <ul
+      class="skills flex flex-row justify-between items-center flex-wrap gap-4"
+    >
+      <li>
+        <div
+          class="flex flex-col items-center justify-between h-20 w-20 gap-1 text-slate-300"
+        >
+          <img src={htmlIcon.src} alt="" />
+          <h4>HTML</h4>
+        </div>
+      </li>
+      <li>
+        <div
+          class="flex flex-col items-center justify-between h-20 w-20 gap-1 text-slate-300"
+        >
+          <img src={cssIcon.src} alt="" />
+          <h4>CSS</h4>
+        </div>
+      </li>
+      <li>
+        <div
+          class="flex flex-col items-center justify-between h-20 w-20 gap-1 text-slate-300"
+        >
+          <img src={JavaScriptIcon.src} alt="" />
+          <h4>JavaScript</h4>
+        </div>
+      </li>
+      <li>
+        <div
+          class="flex flex-col items-center justify-between h-20 w-20 gap-1 text-slate-300"
+        >
+          <img src={ReactIcon.src} alt="" />
+          <h4>React</h4>
+        </div>
+      </li>
+      <li>
+        <div
+          class="flex flex-col items-center justify-between h-20 w-20 gap-1 text-slate-300"
+        >
+          <img src={TailwindIcon.src} alt="" />
+          <h4>Tailwind</h4>
+        </div>
+      </li>
+      <li>
+        <div
+          class="flex flex-col items-center justify-between h-20 w-20 gap-1 text-slate-300"
+        >
+          <img src={BootstrapIcon.src} alt="" />
+          <h4>Bootstrap</h4>
+        </div>
+      </li>
+      <li>
+        <div
+          class="flex flex-col items-center justify-between h-20 w-20 gap-1 text-slate-300"
+        >
+          <img src={FigmaIcon.src} alt="" />
+          <h4>Figma</h4>
+        </div>
+      </li>
+      <li>
+        <div
+          class="flex flex-col items-center justify-between h-20 w-20 gap-1 text-slate-300"
+        >
+          <img src={IllustratorIcon.src} alt="" />
+          <h4>Illustrator</h4>
+        </div>
+      </li>
+      <li>
+        <div
+          class="flex flex-col items-center justify-between h-20 w-20 gap-1 text-slate-300"
+        >
+          <img src={AngularIcon.src} alt="" />
+          <h4>Angular</h4>
+        </div>
+      </li>
+    </ul>
+  </section>
+</section>

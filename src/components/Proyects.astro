@@ -1,0 +1,136 @@
+---
+import TagUi from "../components/TagUI.astro";
+import TagDev from "../components/TagDev.astro";
+import Tag2 from "../components/Tag2.astro";
+import htmlIcon from "../components/icons/Html 5.svg";
+import cssIcon from "../components/icons/CSS3.svg";
+import JavaScriptIcon from "../components/icons/JavaScript.svg";
+import ReactIcon from "../components/icons/React Native.svg";
+import TailwindIcon from "../components/icons/Tailwind CSS.svg";
+import BootstrapIcon from "../components/icons/Bootstrap.svg";
+import FigmaIcon from "../components/icons/Figma.svg";
+import IllustratorIcon from "../components/icons/Adobe Illustrator.svg";
+import AngularIcon from "../components/icons/AngularJS.svg";
+import CodeIcon from "./icons/Code.astro";
+import android from "../components/icons/android.svg";
+---
+
+<h1 class="flex flex-row gap-2 mb-6 text-4xl items-center">
+  <CodeIcon />
+   Proyects
+</h1>
+<section class="grid md:grid-cols-2 gap-8">
+  <a href="https://www.ariguani.com.co/Index.html" target="_blank">
+    <article
+      class="flex flex-col bg-slate-900 rounded-xl w-80 md:w-96 overflow-hidden hover:scale-105 hover:shadow-lg hover:shadow-blue-600/10"
+    >
+      <div
+        class="top-section h-52 p-2 bg-center bg-cover"
+        style="background-image: url('/ariguani.webp');"
+      >
+        <Tag2 />
+      </div>
+      <div class="down-section flex flex-col p-5 gap-3">
+        <h3 class="text-xl text-slate-300">Web Constructora Ariguani</h3>
+        <p class="text-sm font-light text-slate-100">
+          Pagina web creada para facilitar procesos de la empresa y tener una
+          carta de presentación para futuros proyectos y trabajadores , en este
+          proyecto participe como DIseñador UX UI y Desarrollador Front End.
+        </p>
+        <div class="tecs flex flex-row flex-wrap gap-4">
+          <img class="size-6" src={FigmaIcon.src} alt="" />
+          <img class="size-6" src={htmlIcon.src} alt="" />
+          <img class="size-6" src={cssIcon.src} alt="" />
+          <img class="size-6" src={JavaScriptIcon.src} alt="" />
+        </div>
+      </div>
+    </article>
+  </a>
+
+  <a
+    href="https://www.behance.net/gallery/187339369/Book-Nook-App-UXUI-Case-Study"
+    target="_blank"
+  >
+    <article
+      class="flex flex-col bg-slate-900 rounded-xl w-80 md:w-96 overflow-hidden hover:scale-105 hover:shadow-lg hover:shadow-blue-600/10"
+    >
+      <div
+        class="top-section h-52 p-2 bg-center bg-cover"
+        style="background-image: url('/book nook web.webp');"
+      >
+        <TagUi />
+      </div>
+      <div class="down-section flex flex-col p-5 gap-3">
+        <h3 class="text-xl text-slate-300">Book Nook App</h3>
+        <p class="text-sm font-light text-slate-100">
+          Quisimos facilitar a los amantes de la lectura poder obtener sus
+          libros deseados en un solo lugar con un plus, es un caso completo de
+          estudio que realice con un equipo de Diseñadores UX para No-Country.
+        </p>
+        <div class="tecs flex flex-row flex-wrap gap-4">
+          <img class="size-6" src={FigmaIcon.src} alt="" />
+        </div>
+      </div>
+    </article>
+  </a>
+
+  <a
+    href="https://www.behance.net/gallery/163544919/Rediseno-Web"
+    target="_blank"
+  >
+    <article
+      class="flex flex-col bg-slate-900 rounded-xl w-80 md:w-96 overflow-hidden hover:scale-105 hover:shadow-lg hover:shadow-blue-600/10"
+    >
+      <div
+        class="top-section h-52 p-2 bg-center bg-cover"
+        style="background-image: url('/webuweb.webp');"
+      >
+        <Tag2 />
+      </div>
+      <div class="down-section flex flex-col p-5 gap-3">
+        <h3 class="text-xl text-slate-300">Web Webu</h3>
+        <p class="text-sm font-light text-slate-100">
+          Webu es una herramienta web que permite la gestión de diferentes
+          procesos dentro de la compañia , tambien desde alli se puede
+          administrar toda la informacion de carga relacionada con app webu.
+          <div class="tecs flex flex-row flex-wrap gap-4">
+            <img class="size-6" src={FigmaIcon.src} alt="" />
+            <img class="size-6" src={htmlIcon.src} alt="" />
+            <img class="size-6" src={cssIcon.src} alt="" />
+            <img class="size-6" src={JavaScriptIcon.src} alt="" />
+            <img class="size-6" src={BootstrapIcon.src} alt="" />
+          </div>
+        </p>
+      </div>
+    </article>
+  </a>
+
+  <a
+    href="https://play.google.com/store/apps/details?id=co.com.ariguani.Access"
+    target="_blank"
+  >
+    <article
+      class="flex flex-col bg-slate-900 rounded-xl w-80 md:w-96 overflow-hidden hover:scale-105 hover:shadow-lg hover:shadow-blue-600/10"
+    >
+      <div
+        class="top-section h-52 p-2 bg-center bg-cover"
+        style="background-image: url('/access.webp');"
+      >
+        <Tag2 />
+      </div>
+      <div class="down-section flex flex-col p-5 gap-3">
+        <h3 class="text-xl text-slate-300">Acces App</h3>
+        <p class="text-sm font-light text-slate-100">
+          App diseñada para marcaciones biometricas al ingresar al area laboral
+          y registro de usuarios, app desarrollada para constructora
+          ariguani,realice diseño y luego la implementación en Adroid Studio
+          mediante el lenguaje XML Android.
+        </p>
+        <div class="tecs flex flex-row flex-wrap gap-4 text-white">
+          <img class="size-6" src={FigmaIcon.src} alt="" />
+          <img class="size-6" src={android.src} alt="" />
+        </div>
+      </div>
+    </article>
+  </a>
+</section>
